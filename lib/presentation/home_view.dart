@@ -11,7 +11,10 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomAppBar(),
+      appBar: AppBar(),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.amber,
+      ),
     );
   }
 }
