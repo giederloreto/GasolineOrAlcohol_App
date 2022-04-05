@@ -11,10 +11,20 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.amber,
-      ),
-    );
+        appBar: AppBar(),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const [
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                ),
+                label: 'HOME'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.star,
+                ),
+                label: 'Favoritos'),
+          ],
+        ));
   }
 }
